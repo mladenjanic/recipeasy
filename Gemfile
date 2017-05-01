@@ -37,6 +37,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'shrine', '~> 2.6', '>= 2.6.1'
 gem 'image_processing', '~> 0.4.1'
 gem 'mini_magick', '~> 4.7'
+gem 'cocoon', '~> 1.2', '>= 1.2.9'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
