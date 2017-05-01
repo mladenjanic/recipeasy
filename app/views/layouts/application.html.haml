@@ -1,0 +1,31 @@
+!!! 5
+%html
+ %head
+  %title Recipeasy
+  = csrf_meta_tags 
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+ %body
+  %nav.navbar.navbar-default{:role => "navigation"}
+   .container-fluid
+   
+    .navbar-header
+     %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+      %span.sr-only Toggle navigation
+      %span.icon-bar
+      %span.icon-bar
+      %span.icon-bar
+     .navbar-brand= link_to image_tag('logo-recipe.png'), root_path
+      
+    .collapse.navbar-collapse#bs-example-navbar-collapse-1
+     %ul.nav.navbar-nav.navbar-right
+      %li= link_to 'Sign Out', root_path
+     %ul.nav.navbar-nav.navbar-left
+      %li= link_to 'New Recipe', new_recipe_path
+  .container
+   - flash.each do |name, msg|
+    - content_tag :div, msg, class: 'alert'
+    
+   = yield
+
+
