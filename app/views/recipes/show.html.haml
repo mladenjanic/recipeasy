@@ -3,7 +3,8 @@
   .col-md-4
    = image_tag @recipe.image_url(:medium), class: 'recipe_image'
   .col-md-8
-   #recipe_info
+   #recipe_info.pin
+    = image_tag 'pin.png', class: 'pinimg'
     %h1= @recipe.title
     %p.description= @recipe.description
     %p
@@ -13,14 +14,16 @@
     
  .row
   .col-md-6
-   #ingredients
+   #ingredients.pin
+    = image_tag 'pin1.png', class: 'pinimg'
     %h2 Ingredients
     %ul
      - @recipe.ingredients.each do |ingredient|
       %li= ingredient.name
       
   .col-md-6
-   #directions
+   #directions.pin
+    = image_tag 'pin2.png', class: 'pinimg'
     %h2 Directions
     %ul
      - @recipe.directions.each do |direction|

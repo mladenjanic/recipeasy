@@ -17,11 +17,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Handlee');
 
 @mixin box-shadow {
-	-webkit-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
-	-moz-box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
-	box-shadow: rgba(0, 0, 0, 0.09) 0 2px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.09) 5px 5px 5px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.09) 5px 5px 5px;
+	box-shadow: rgba(0, 0, 0, 0.09) 5px 5px 5px;
 }
 
 $red: #DB6161;
@@ -148,6 +149,19 @@ body {
 			border-bottom: 1px solid #EAEAEA;
 		}
 	}
+}
+
+.pin {
+    font-family: 'Handlee', cursive;
+    font-size: 1.2em;
+    padding-top: 0 !important;
+    margin-top: 0;
+    img.pinimg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
 }
 
 .form-inline {
