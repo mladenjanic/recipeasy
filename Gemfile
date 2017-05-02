@@ -38,6 +38,7 @@ gem 'shrine', '~> 2.6', '>= 2.6.1'
 gem 'image_processing', '~> 0.4.1'
 gem 'mini_magick', '~> 4.7'
 gem 'cocoon', '~> 1.2', '>= 1.2.9'
+gem 'devise', '~> 4.2', '>= 4.2.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
